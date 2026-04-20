@@ -1,0 +1,3 @@
+Meter UI 
+1) Un texto que muestra en tiempo real el numero de planos detectados
+2) Un boton de borrar 
