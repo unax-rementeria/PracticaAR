@@ -1,8 +1,8 @@
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.XR.ARFoundation.Samples;
 
 public class PlaneCounter : MonoBehaviour
 {
@@ -14,6 +14,8 @@ public class PlaneCounter : MonoBehaviour
     public List<GameObject> prefabs;
     public TMP_Dropdown dropdown;
     public GameObject SelectedPrefab;
+    [SerializeField]
+    PlaceOnPlane placeOnPlane;  
     void Start()
     {
         Trackables = GameObject.Find("Trackables");
@@ -31,13 +33,14 @@ public class PlaneCounter : MonoBehaviour
         texto.text = "Planes detected: " + childCount;
     }
 
-    public void DeleteAllPlanes()
+    public void DestroySpawnedObject()
+{
+    if (placeOnPlane.spawnedObject != null)
     {
-        foreach (Transform child in Tracks)
-        {
-            Destroy(child.gameObject);
-        }
+        Destroy(placeOnPlane.spawnedObject);
+        placeOnPlane.spawnedObject = null;
     }
+}
 
     public void OnDropdownChange(int index)
     {

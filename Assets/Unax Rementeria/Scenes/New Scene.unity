@@ -1239,6 +1239,7 @@ MonoBehaviour:
   - {fileID: 6996476542637178915, guid: 4fab8875fd35edb4abdf21bc5b3cbc60, type: 3}
   dropdown: {fileID: 1912014030}
   SelectedPrefab: {fileID: 0}
+  placeOnPlane: {fileID: 1407775234}
 --- !u!4 &1035137628
 Transform:
   m_ObjectHideFlags: 0
@@ -2408,7 +2409,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1035137627}
         m_TargetAssemblyTypeName: PlaneCounter, Assembly-CSharp
-        m_MethodName: DeleteAllPlanes
+        m_MethodName: DestroySpawnedObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

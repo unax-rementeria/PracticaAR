@@ -33,7 +33,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
         /// <summary>
         /// The object instantiated as a result of a successful raycast intersection with a plane.
         /// </summary>
-        public GameObject spawnedObject { get; private set; }
+        public GameObject spawnedObject { get; set; }
 
         bool m_Pressed;
 
