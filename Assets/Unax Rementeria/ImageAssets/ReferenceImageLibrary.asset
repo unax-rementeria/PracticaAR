@@ -37,3 +37,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: universidad-de-vitoria-euneiz
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5209719576892107196
+      m_GuidHigh: 8117795005518991261
+    m_SerializedTextureGuid:
+      m_GuidLow: 573166049956577410
+      m_GuidHigh: 14723629499282374378
+    m_Size: {x: 0.274, y: 0.19193237}
+    m_SpecifySize: 1
+    m_Name: PatronImagenCarretera
+    m_Texture: {fileID: 0}
